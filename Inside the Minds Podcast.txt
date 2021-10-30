@@ -6,4 +6,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <!--stylesheet link-->
+</head>
+<body id="Index"><!--body ID used for page styling-->
+></body>
  
