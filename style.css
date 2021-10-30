@@ -6,10 +6,10 @@
 }
 .header{
 width: 100%;
-height: 80px;
+height: 200px;
 
 display:block;
-background-color:#101010;
+background-color:orangered;
 
 }
 .inside_header{
@@ -17,7 +17,7 @@ width: 1000px;
 height: 100%;
 display:block;
 margin: 0 auto; 
-background-color: orangered;
+background-color:black;
 }
 
 .logo_container{
@@ -49,6 +49,8 @@ display: table;
 float: left;
 padding: 0px 20px;
 }
-body.index {
-background-color: darkorange;
+
+.main{
+ background-image:center;
+ background-size: cover;
 }
