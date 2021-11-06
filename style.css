@@ -30,4 +30,11 @@
   .nav a.active{
     background: #e31c04;
   }
+  .DanteAbout{
+    float:left;
+    color:#f2f2f2;
+    font-weight:bold;
+    font-size: large;
+    
+  }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
