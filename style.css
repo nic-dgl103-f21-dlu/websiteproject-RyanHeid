@@ -74,4 +74,52 @@
    width:400px;
    height:600px;
  }
+ /*episodes page style */
+/*YouTube iframes*/
+  .rainey iframe{
+    float:left;
+    margin:0 auto;
+   padding:20px;
+  }
+  .miletich iframe{
+    padding-left: 800px;
+  } 
+  .hughes iframe{
+    float:left;
+    margin:0 auto;
+    padding:20px; 
+  }
+  .fleury iframe{
+    padding-left:800px;
+  }  
+  /* episodes paragraph styles */
+ .rainey p{
+   color:white;
+   font-weight: bold;
+   font-size:x-large;
+   width:800px;
+   padding-left:550px;      
+ }
+ .miletich p{
+   color:white;
+   font-weight: bold;
+   font-size:x-large; 
+   width:600px;  
+ }
+ .hughes p{
+  color:white;
+  font-weight: bold;
+  font-size:x-large; 
+  width:800px;
+  padding-left:550px;
+
+ }
+ 
+ .fleury{
+  color:white;
+  font-weight: bold;
+  font-size:x-large;
+  width:600px;
+ }
+ 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
