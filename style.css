@@ -13,7 +13,7 @@
   }
 
   .nav a{
-   float: left;
+   float:left;
    color: #f2f2f2;
    text-align: center;
    width: 100px;
@@ -21,6 +21,7 @@
    font-weight: bold;
    text-transform: uppercase;
    padding: 20px 16px;
+   align-items: center;
   }
 
   .nav a:hover{
@@ -30,11 +31,47 @@
   .nav a.active{
     background: #e31c04;
   }
-  .DanteAbout{
-    float:left;
+  .text{
+    color:white;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .container{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+  }
+  .dante-about h2{
+    padding-left: 20%;
+  }
+  .dante-about p{
+    width: 50%;
+  }
+  .dante-about{   
+    
     color:#f2f2f2;
     font-weight:bold;
     font-size: large;
-    
   }
+ 
+  .dantepic img{
+    width: 400px; 
+    height: 600px;  
+ }
+ 
+ .ryan-about h2{
+    padding-left: 30%; 
+ }
+ .ryan-about{
+  float:left;
+  color:#f2f2f2;
+  font-weight:bold;
+  font-size: large;
+ }
+ .ryanpic img{
+   width:400px;
+   height:600px;
+ }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
