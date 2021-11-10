@@ -40,6 +40,7 @@
     width:50%;
     position: relative;
     padding-left: 480px;
+    
   }
   .yella iframe{
     display: block;
@@ -75,16 +76,18 @@
    justify-content: space-around;
    flex-wrap:wrap;   
   }
+ /*took container out with comment lines*/ 
   .dante-about h2{
+    color:white;
     padding-left:250px;
     padding-top:200px;
     position: relative;
+    
+
   }
   .dante-about p{
     width: 40%;
     padding-bottom:10px;
-  }
-  .dante-about{    
     color:#f2f2f2;
     font-weight:bold;
     font-size: x-large;
@@ -92,24 +95,35 @@
     padding-left: 40px;
   }
   .dantepic img{
-    width: 400px; 
-    height: 600px;  
-    position:relative;
-    padding-top:5px;
+    position: relative;
+    width:400px; 
+    height:600px;  
     
+    padding-left:40px; 
  }
  .ryan-about h2{
+    position: relative;
     padding-left: 30%; 
+    color:white;
+    font:bold;
+    padding-left: 50%;
+  
+    
  }
- .ryan-about{
+ .ryan-about p{
    width:40%;
    color:#f2f2f2;
    font-weight:bold;
    font-size: x-large;
+   padding-left: 50%;
+   position:relative;
  }
  .ryanpic img{
    width:400px;
    height:600px;
+   padding-left: 50%;
+   position:relative;
+   padding-bottom: 400px;
  }
 footer{
   color:#f2f2f2;
@@ -125,16 +139,18 @@ footer{
    padding:20px;
   }
   .miletich iframe{
+    
     position:relative;
+    float:left;
     padding-left: 20px;
-    padding-top: 20px;
+    padding-top: 100px;
     padding-right: 900px;
   } 
   .hughes iframe{
     
     position: relative;
     padding-left:20px; 
-    padding-top:0px;
+    padding-top:10px;
   }
   .fleury iframe{
     padding-left:20px;
@@ -150,13 +166,16 @@ footer{
    padding-top: 20px;   
  }
  .miletich p{
-   color:white;
-   float:inline-start;
-   font-weight: bold;
-   font-size:x-large; 
-   padding-bottom: 500px;
-   width:800px; 
-   padding-left:600px; 
+    color:white;
+    font-weight: bold;
+    font-size:x-large; 
+    margin-left:100px;
+    overflow:hidden;
+    text-align:left;
+    width:800px;
+  
+ 
+   
  }
  .hughes p{
    color:white;
@@ -175,5 +194,39 @@ footer{
    width:800px;
    padding-left:550px;
  }
- 
+ /*STORE CSS STARTS HERE*/
+
+ .shirt img{
+   padding-top:50px;
+   padding-left:750px;
+ }
+ .shirt h1{
+   color:white;
+   font-weight: bold;
+   padding-top:40px;
+   padding-left: 630px;
+ }
+ .shirt p{
+   color:white;
+   font-weight: bold;
+   font-size:x-large;
+   width:800px;
+   padding-left:550px;
+ }
+
+ /*CONTACTS PAGE CSS STARTS HERE*/
+ .contact h1{
+  color:white;
+  font-weight: bold;
+  font-size:x-large;
+  width:800px;
+  padding-left:800px;
+ }
+ .contact p{
+   color:white;
+   font-weight: bold;
+   font-size:x-large;
+   width:800px;
+   padding-left:550px;
+ }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
