@@ -39,29 +39,30 @@
     font-size:x-large;  
     width:50%;
     position: relative;
-    padding-left: 480px;
-    
+    padding-left: 480px;    
   }
   .yella iframe{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width:50;
-    padding-top: 10%;
+    padding-top: 5%;
   }
-.latest h1{
+  .latest h1{
    color:#f2f2f2;
    font-weight:bold;
    position: relative;
    padding-left: 800px;
+   padding-top: 100px;
   }
-.latest h2{
+  .yella h2{
    color:#f2f2f2;
    font-weight:bold;
    position: relative;
-   padding-left: 875px;
+   padding-left: 900px;
+   padding-top: 100px;
 }
-.latest p{
+  .yella p{
    color:#f2f2f2;
    font-weight:bold;
    font-size:x-large; 
@@ -70,130 +71,131 @@
    width:50%;
    padding-bottom:100px;
 }
-/*made a container for about Dante and Ryan*/
-  .container{
-   display:flex;
-   justify-content: space-around;
-   flex-wrap:wrap;   
-  }
- /*took container out with comment lines*/ 
-  .dante-about h2{
-    color:white;
-    padding-left:250px;
-    padding-top:200px;
-    position: relative;
-    
-
-  }
-  .dante-about p{
-    width: 40%;
-    padding-bottom:10px;
-    color:#f2f2f2;
-    font-weight:bold;
-    font-size: x-large;
-    position: relative;
-    padding-left: 40px;
-  }
-  .dantepic img{
-    position: relative;
-    width:400px; 
-    height:600px;  
-    
-    padding-left:40px; 
- }
- .ryan-about h2{
-    position: relative;
-    padding-left: 30%; 
-    color:white;
-    font:bold;
-    padding-left: 50%;
-  
-    
- }
- .ryan-about p{
-   width:40%;
+  .allen iframe{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width:50;
+   padding-top: 5%;
+}
+  .allen h2{
    color:#f2f2f2;
    font-weight:bold;
+   position: relative;
+   padding-left: 875px;
+}
+  .allen p{
+   color:#f2f2f2;
+   font-weight:bold;
+   font-size:x-large; 
+   position:relative;
+   padding-left:480px;
+   width:50%;
+   padding-bottom:100px;  
+  }
+/*made a flex container for Dante and Ryan about*/
+  .flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height:auto;
+    width: auto;
+    justify-content: space-between;
+    padding: 100px;
+    color: white;
+   }
+
+  .dante-about{
+    flex:1;
+  }
+   
+  .dante-about h2{
+   position: relative;
+ }
+ 
+  .dante-about p{
+   width: auto;
+   height: auto;
+   font-weight:bold;
    font-size: x-large;
-   padding-left: 50%;
+   position: relative; 
+ }
+  .dantepic img{
+   position: relative;
+   width:400px; 
+   height:600px;  
+ }
+ .ryan-about{
+   flex:1;
+ }
+ .ryan-about h2{
+   position:relative ; 
+   font:bold;
+   
+      
+ }
+ .ryan-about p{
+   width:auto;
+   height:auto;
+   font-weight:bold;
+   font-size: x-large;
    position:relative;
  }
  .ryanpic img{
    width:400px;
    height:600px;
-   padding-left: 50%;
    position:relative;
-   padding-bottom: 400px;
+   padding-bottom: 100px;
  }
 footer{
-  color:#f2f2f2;
+   color:#f2f2f2;
 }
 
  /*episodes page style */
+
 /*YouTube iframes*/
 /*decided to make iframes vertical above one another, instead of left to right. After playing around with it, I find this way will look better. Although I am having problems aligning Iframe to the paragraph description*/
-  .rainey iframe{
-    position:relative;
-    float:left;
-    margin:0 auto;
-   padding:20px;
+
+/*created container in row to include all episodes and descriptions*/
+.iframes-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height:auto;
+  width: auto;
+  justify-content: space-between;
+  padding: 120px;
+  color: white;
   }
-  .miletich iframe{
-    
-    position:relative;
-    float:left;
-    padding-left: 20px;
-    padding-top: 100px;
-    padding-right: 900px;
+  .rainey iframe{
+   position:relative;
+   padding: 20px;
+  }
+  /*each paragraph style*/
+  .iframes-container p{
+    font-weight: bold;
+    font-size:x-large;
+    height: 400px;
+    width:50%;
+    padding:10px;
+  }
+  .miletich iframe{   
+   position:relative;
+   padding: 20px;
   } 
-  .hughes iframe{
-    
-    position: relative;
-    padding-left:20px; 
-    padding-top:10px;
+  .hughes iframe{    
+   position: relative;
+   padding: 20px;
   }
   .fleury iframe{
-    padding-left:20px;
-  }  
-  /* episodes paragraph styles */
-  
- .rainey p{
-   color:white;
-   font-weight: bold;
-   font-size:x-large;
-   width:800px;
-   padding-left:550px;   
-   padding-top: 20px;   
- }
- .miletich p{
-    color:white;
-    font-weight: bold;
-    font-size:x-large; 
-    margin-left:100px;
-    overflow:hidden;
-    text-align:left;
-    width:800px;
-  
- 
+    position: relative;
+    padding: 20px;
+  } 
    
- }
- .hughes p{
-   color:white;
-   font-weight: bold;
-   font-size:x-large; 
-   width:800px;
-   padding-left:550px;
 
- }
  
- .fleury p{
-   position: relative;
-   color:white;
-   font-weight: bold;
-   font-size:x-large;
-   width:800px;
-   padding-left:550px;
- }
+  
+
  /*STORE CSS STARTS HERE*/
 
  .shirt img{
