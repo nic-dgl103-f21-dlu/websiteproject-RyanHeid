@@ -103,18 +103,15 @@
     justify-content: space-between;
     padding: 100px;
     color: white;
-   }
-
+ }
   .dante-about{
     flex:1;
-  }
-   
+  }  
   .dante-about h2{
    position: relative;
  }
- 
   .dante-about p{
-   width: auto;
+   width: 700px;
    height: auto;
    font-weight:bold;
    font-size: x-large;
@@ -129,13 +126,11 @@
    flex:1;
  }
  .ryan-about h2{
-   position:relative ; 
-   font:bold;
-   
-      
+   position:relative; 
+   font:bold;      
  }
  .ryan-about p{
-   width:auto;
+   width:700px;
    height:auto;
    font-weight:bold;
    font-size: x-large;
@@ -215,6 +210,10 @@ footer{
    width:800px;
    padding-left:550px;
  }
+ .shirt a{
+    color:#ff4500;
+    font-weight: bold;
+ }
 
  /*CONTACTS PAGE CSS STARTS HERE*/
  .contact h1{
@@ -230,5 +229,9 @@ footer{
    font-size:x-large;
    width:800px;
    padding-left:550px;
+ }
+ .contact a{
+   color:#ff4500;
+   font-weight: bold;
  }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
