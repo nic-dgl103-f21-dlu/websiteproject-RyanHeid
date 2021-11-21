@@ -17,7 +17,7 @@
     <main>    
     
     <div class="header">
-    <img src= "Images/BannerPic23131.jpg" width ="100%" height= "450px"> 
+    <img src= "Images/BannerPic23131.jpg" alt="Inside the Minds Podcast" width ="2000" height= "450"> 
     <!--my banner pic seems to load slow. I tried to resize it, but that didn't make much of a difference-->   
     </div>
     <div class="nav">
@@ -28,11 +28,53 @@
         <a href ="store.html">Store</a>
         <a class ="active" href ="contact.html">Contact</a>
     </div>
-    <div class="contact">
-        <h1>CONTACT US!</h1>
-        <p>If you are interested in being a future guest, have a request for a future guest, or need to contact Inside the Minds Podcast, you can send Dante and Ryan an email here:  <a href="mailto:insidethemindspodcast@gmail.com">Inside the Minds Podcast</a> </p>
-             <!--remember to link our email-->
-    </div>    
+    <div class="contact-form">
+        <h1>Interested in being a guest? Contact us!</h1>
+        <form method="post" action="https://learndigital.dev/programs/dgl103-form.php">
+            <label for="fname">First Name</label><br>
+            <input type="text" id="fname" name="firstname" placeholder="Ex: Mike">
+            <br>
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lastname" placeholder="Ex: Smith">
+            <br>
+        <label for="email">Email <span class="label-required">* (reqired)</span></label><br>
+        <input type="email" id="email" name="email" placeholder="Ex: ryan@gmail.com" required>
+            <br>
+        <label for="sport">Profession</label><br>
+        <select id="sport" name="sport">
+            <option value="football">Football</option>
+            <option value="hockey">Hockey</option>
+            <option value="boxing">Boxing</option>
+            <option value="mma">MMA</option>
+            <option value="baseball">Baseball</option>
+            <option value="music">Music Artist</option>
+            <option value="other">Other</option>
+        </select>
+
+        <fieldset>
+            <legend>Click here to schedule an available date</legend>
+            <input type="radio" id="dec04" name="date" value="December 04">
+            <label for="dec04">December 04 2021</label><br>
+            <input type="radio" id="dec11" name="date" value="Dec 11">
+            <label for="dec11">December 11 2021</label><br>
+            <input type="radio" id="jan08" name="date" value="January 08">
+            <label for="jan08">January 08 2022</label><br>
+            <input type="radio" id="jan15" name="date"
+            value="January 15">
+            <label for="jan15">January 15 2022</label><br>
+          </fieldset>
+
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" placeholder="Please tell us about yourself" style="height:200px"></textarea>
+
+          <div class="wrapper-button">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+    
+      
   </main>
   <footer>
     <p>copyright 2021 Iniside the Minds Podcast all rights reserved</p>

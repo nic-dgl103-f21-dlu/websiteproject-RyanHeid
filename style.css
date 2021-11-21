@@ -1,3 +1,9 @@
+img{
+  max-width:100%;
+  height: auto;
+  display:flex;
+}
+
   /*INDEX CSS*/
   body{
     margin: 0;
@@ -27,19 +33,26 @@
   .nav a.active{
     background: #e31c04;
   } 
+  /*=====================================================*/
   .aboutpodcast h1{
-    color:white;
+    color:#f2f2f2;
+    font-weight:bold;
+    display: flex;
     position: relative;
-    padding-top: 80px;
-    padding-left: 550px;
+    justify-content: center;
+    align-items: center;
+      
+    
   }
   .aboutpodcast p{
     color:#f2f2f2;
-    font-weight:bold;
-    font-size:x-large;  
-    width:50%;
-    position: relative;
-    padding-left: 480px;    
+   font-weight:bold;
+   font-size:x-large; 
+   position:relative;
+   padding-left:25%;
+   width:50%;
+   padding-bottom:10%;  
+        
   }
   .flex-container11{
     display: flex;
@@ -51,26 +64,33 @@
     padding: 100px;
     color: rgb(29, 16, 219);
   }
+  
   .yella iframe{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width:50;
-    padding-top: 5%;
+    padding-top: 1%;
+    border-width: 0px;
   }
-  .latest h1{
-   color:#f2f2f2;
-   font-weight:bold;
-   position: relative;
-   padding-left: 40%;
-   padding-top: 10%;
+  .featured h2{
+    color:#f2f2f2;
+    font-weight:bold;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding-top:2%;
+    padding-bottom:5%;
   }
+
   .yella h2{
-   color:#f2f2f2;
-   font-weight:bold;
-   position: relative;
-   padding-left: 52%;
-   padding-top: 5%;
+    color:#f2f2f2;
+    font-weight:bold;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
 }
   .yella p{
    color:#f2f2f2;
@@ -79,20 +99,23 @@
    position:relative;
    padding-left:25%;
    width:50%;
-   padding-bottom:10%;
+   padding-bottom:5%;
 }
   .allen iframe{
    display: block;
    margin-left: auto;
    margin-right: auto;
-   width:50;
-   padding-top: 5%;
+   width:50%;
+   padding-top: 1%;
+   border-width: 0px;
 }
   .allen h2{
-   color:#f2f2f2;
-   font-weight:bold;
-   position: relative;
-   padding-left: 52%;
+    color:#f2f2f2;
+    font-weight:bold;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
 }
   .allen p{
    color:#f2f2f2;
@@ -161,22 +184,39 @@ footer{
 /*YouTube iframes*/
 /*decided to make iframes vertical above one another, instead of left to right. After playing around with it, I find this way will look better. Although I am having problems aligning Iframe to the paragraph description*/
 
+
 /*created container in row to include all episodes and descriptions*/
+.iframes-container h2{
+  flex:10;
+  display: flex;
+  position:relative; 
+  font:bold;  
+  justify-content: center;
+  
+}
 .iframes-container{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   height:auto;
   width: auto;
-  justify-content: space-between;
-  padding: 120px;
+  justify-content:space-around;
+  padding: 10%;
+  gap: 50px;
   color: white;
   }
+  .iframes-container p{
+    font-size:x-large;
+    width:40%;
+   
+  }
+  /*
   .rainey iframe{
    position:relative;
    padding: 20px;
+   border-width: 0px;
   }
-  /*each paragraph style*/
+  /*each paragraph style
   .iframes-container p{
     font-weight: bold;
     font-size:x-large;
@@ -187,20 +227,62 @@ footer{
   .miletich iframe{   
    position:relative;
    padding: 20px;
+   border-width: 0px;
   } 
   .hughes iframe{    
    position: relative;
    padding: 20px;
+   border-width: 0px;
   }
   .fleury iframe{
     position: relative;
     padding: 20px;
+    border-width: 0px;
   } 
+  .simon iframe{
+    border-width: 0px;
+  }
+
+  .glanton iframe{
+    border-width: 0px;
+  }
    
-
+  .richards iframe{
+    border-width: 0px;
+  }
  
-  
+  .jjohnson iframe{
+    border-width: 0px;
+  }
 
+  .banks iframe{
+    border-width: 0px;
+  }
+
+  .printers iframe{
+    border-width: 0px;
+  }
+  
+  .kidd iframe{
+    border-width: 0px;
+  }
+
+  .manning iframe{
+    border-width: 0px;
+  }
+
+  .frazier iframe{
+    border-width: 0px;
+  }
+
+  .jimmerson iframe{
+    border-width: 0px;
+  }
+
+  .bruce iframe{
+    border-width: 0px;
+  }
+  */
  /*STORE CSS STARTS HERE*/
 
  .shirt img{
@@ -244,4 +326,94 @@ footer{
    color:#ff4500;
    font-weight: bold;
  }
+ /*form contact buttons start here =======================*/
+ input[type="reset"] {
+  color: #0e7a0d;
+  padding: 12px 20px;
+  border: 1px solid #0e7a0d;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="reset"]:hover {
+  background-color: #d1efe3;
+}
+
+input[type="submit"] {
+  background-color: #0e7a0d;
+  color: white;
+  padding: 12px 20px;
+  border: 1px solid #0e7a0d;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #00ab66;
+}
+/*form structure starts here=============================*/
+.contact-form {
+  border: radius 5px;
+  background-color:whitesmoke;
+  padding: 3%;
+  max-width:50%;
+  margin: auto;
+  margin-top: 10%;
+  
+
+}
+
+.wrapper-button {
+  display: flex;
+  justify-content: space-between;
+}
+/*form controls start here=============================*/
+input, select, textarea{
+  font-size: 1em;
+}
+
+input[type="text"],
+
+textarea {
+  width: 50%;
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical; 
+}
+input[type="email"] {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+select {
+  width: 20%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+textarea {
+  font-family: sans-serif;
+}
+
+fieldset {
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+}
+
+.label-required {
+  font-size: 0.8rem;
+  color: red;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
