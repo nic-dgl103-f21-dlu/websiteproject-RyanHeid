@@ -3,6 +3,10 @@ img{
   height: auto;
   display:flex;
 }
+/*added max width to iframes for mobile response issues*/
+iframe{
+  max-width: 100%;
+}
 
   /*INDEX CSS*/
   body{
@@ -69,7 +73,7 @@ img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width:50;
+    width:50%;
     padding-top: 1%;
     border-width: 0px;
   }
@@ -134,7 +138,7 @@ img{
     height:auto;
     width: auto;
     justify-content: space-between;
-    padding: 100px;
+    padding: 5%;
     color: white;
  }
   .dante-about{
@@ -286,8 +290,8 @@ footer{
  /*STORE CSS STARTS HERE*/
 
  .shirt img{
-   padding-top:50px;
-   padding-left:750px;
+   padding-top:5%;
+   padding-left:40%;
  }
  .shirt h1{
    color:white;
