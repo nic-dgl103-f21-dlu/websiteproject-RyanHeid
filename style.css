@@ -7,7 +7,18 @@ img{
 iframe{
   max-width: 100%;
 }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    display: flex;
+  }
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    display: flex;
+  }
+    
   /*INDEX CSS*/
   body{
     margin: 0;
