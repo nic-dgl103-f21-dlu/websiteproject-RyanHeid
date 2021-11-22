@@ -26,9 +26,46 @@
     <div class="shirt">
         <h1>INSIDE THE MINDS PODCAST CLOTHING</h1>
         <img src="Images/podcastshirt.PNG" width="400" height="600" alt="tshirt">
-        <p>Check out our lastest line of Inside the Minds clothing! From t-shirts to hats, and hoodies to coffee mugs, we have something for everyone. Ladies and kids sizes too! New items added monthly, so be sure to come back and see what's new! For inquires, please email us at <a href="mailto:insidethemindspodcast@gmail.com">Inside the Minds Podcast</a> </p>
-        <!--remember to link email-->
     </div>
+    <div class="store-form">
+        <h1>For purchases or purchase inquiries, please submit this form</h1>
+        <form method="post" action="https://learndigital.dev/programs/dgl103-form.php">
+            <label for="fname">First Name</label><br>
+            <input type="text" id="fname" name="firstname" placeholder="Ex: Mike">
+            <br>
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lastname" placeholder="Ex: Smith">
+            <br>
+        <label for="email">Email <span class="label-required">* (reqired)</span></label><br>
+        <input type="email" id="email" name="email" placeholder="Ex: ryan@gmail.com" required>
+            <br>
+        <label for="item">Item</label><br>
+        <select id="item" name="item">
+            <option value="t-shirt">T-Shirt</option>
+            <option value="hoodie">Hoodie</option>
+            <option value="hat">Hat</option>
+            <option value="jacket">Jacket</option>
+        </select><br>
+
+        <label for="size">Size</label><br>
+        <select id="size" name="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option vaule="xlarge">XLarge</option>
+            <option value="xxlarge">XXLarge</option>
+        </select><br>
+
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" placeholder="Special inquiries or comments here:" style="height:200px"></textarea>
+
+          <div class="wrapper-button">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+
 
   </main>
   <footer>

@@ -6,19 +6,18 @@ img{
 /*added max width to iframes for mobile response issues*/
 iframe{
   max-width: 100%;
+  min-width: 300px;
 }
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .wrapper {
+@media only screen and (min-width: 300px) {
+  .wrapper, .featured,.nav {
     display: flex;
   }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .wrapper {
-    display: flex;
-  }
+
+  @media only screen and (min-width: 40em) {}
     
+
   /*INDEX CSS*/
   body{
     margin: 0;
@@ -321,6 +320,15 @@ footer{
     color:#ff4500;
     font-weight: bold;
  }
+ /*store form structure+++++++++++++++++++++*/
+ .store-form {
+  border: radius 5px;
+  background-color:whitesmoke;
+  padding: 3%;
+  max-width:50%;
+  margin: auto;
+  margin-top: 10%;
+}
 
  /*CONTACTS PAGE CSS STARTS HERE*/
  .contact h1{
@@ -374,8 +382,6 @@ input[type="submit"]:hover {
   max-width:50%;
   margin: auto;
   margin-top: 10%;
-  
-
 }
 
 .wrapper-button {
