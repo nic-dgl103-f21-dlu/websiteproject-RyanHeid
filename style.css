@@ -6,39 +6,32 @@ img{
 /*added max width to iframes for mobile response issues*/
 iframe{
   max-width: 100%;
-  min-width: 300px;
+  min-width: 30%;
 }
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 300px) {
-  .wrapper, .featured,.nav {
-    display: flex;
-  }
 
-
-  @media only screen and (min-width: 40em) {}
-    
-
-  /*INDEX CSS*/
+ /*INDEX CSS*/
   body{
     margin: 0;
     padding: 0;
     font-family: Arial;
-    background-image: url(Images/background.jpg) 
+    background-image: url(Images/background.png) 
   }
   .nav{
     overflow: hidden;
     background:  #181612;
-    margin-top: -5px;
+    position:auto;
+    display: flex;
+    width: 100%;
+   
   }
   .nav a{
-   float:left;
    color: #f2f2f2;
    text-align: center;
    width: 45%;
    text-decoration: none;
    font-weight: bold;
    text-transform: uppercase;
-   padding: 20px 16px;
+   padding: 10px 12px;
    align-items: center;
   }
   .nav a:hover{
@@ -48,7 +41,7 @@ iframe{
     background: #e31c04;
   } 
   /*=====================================================*/
-  .aboutpodcast h1{
+  .aboutpodcast h2{
     color:#f2f2f2;
     font-weight:bold;
     display: flex;
@@ -91,10 +84,10 @@ iframe{
     color:#f2f2f2;
     font-weight:bold;
     display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    padding-top:2%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top:5%;
     padding-bottom:5%;
   }
 
@@ -158,7 +151,7 @@ iframe{
    position: relative;
  }
   .dante-about p{
-   width: 700px;
+   width:60%;
    height: auto;
    font-weight:bold;
    font-size: x-large;
@@ -177,20 +170,22 @@ iframe{
    font:bold;      
  }
  .ryan-about p{
-   width:700px;
+   width:60%;
    height:auto;
    font-weight:bold;
    font-size: x-large;
    position:relative;
+   
  }
  .ryanpic img{
    width:400px;
    height:600px;
    position:relative;
-   padding-bottom: 100px;
+   padding-top: 7%;
  }
 footer{
    color:#f2f2f2;
+   
 }
 
  /*episodes page style */
@@ -300,14 +295,24 @@ footer{
  /*STORE CSS STARTS HERE*/
 
  .shirt img{
-   padding-top:5%;
-   padding-left:40%;
+   
+   max-width:100%;
+   height: auto;
+   display: table;
+   margin: 0 auto;
+   padding-top: 5%;
+   
+   
+   
  }
- .shirt h1{
+ .shirt h2{
+   padding-top:5%;
    color:white;
    font-weight: bold;
-   padding-top:40px;
-   padding-left: 630px;
+   max-width:100%;
+   height: auto;
+   display: table;
+   margin: 0 auto;
  }
  .shirt p{
    color:white;
@@ -438,3 +443,277 @@ fieldset {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/*+++++ Medium devices (landscape tablets, 560px and up)+++++ 
+@media only screen and (min-width: 600px) {
+  .wrapper, .featured,.nav, .ryan-about p, .dante-about p,       .aboutpodcast h2 {
+    display: flex;*/
+   
+  
+  @media only screen and (max-width: 800px) {
+    
+    img{
+      max-width:100%;
+      height: auto;
+      display:flex;
+    }
+    /*added max width to iframes for mobile response issues++ */
+   
+    /*INDEX CSS*/
+      body{
+        margin: 0;
+        padding: 0;
+        font-family: Arial;
+        background-image: url(Images/background.png) 
+      }
+      .nav{
+        overflow: hidden;
+        background:  #181612;
+        position:auto;
+        display: flex;
+        width: 100%;
+       
+      }
+      .nav a{
+       color: #f2f2f2;
+       text-align: center;
+       width: 45%;
+       text-decoration: none;
+       font-weight: bold;
+       text-transform: uppercase;
+       padding: 10px 12px;
+       align-items: center;
+      }
+      .nav a:hover{
+       background: #ff4500; 
+      }
+      .nav a.active{
+        background: #e31c04;
+      } 
+      /*=====================================================*/
+      .aboutpodcast h2{
+        color:#f2f2f2;
+        font-weight:bold;
+        font-size: small;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+          
+        
+      }
+      .aboutpodcast p{
+        color:#f2f2f2;
+       font-weight:bold;
+       font-size:small; 
+       position:relative;
+       padding-left:25%;
+       width:50%;
+       padding-bottom:10%;  
+            
+      }
+
+      
+      .yella iframe{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width:80%;
+        height: 100%;
+        padding-top: 1%;
+        border-width: 0px;
+      }
+      .featured h2{
+        font-size:large;
+        color:#f2f2f2;
+        font-weight:bold;
+        display: flex;
+        text-align: end;
+        
+        
+        padding-top:5%;
+        padding-bottom:5%;
+      }
+    
+      .yella h2{
+        font-size: medium;
+        color:#f2f2f2;
+        font-weight:bold;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+      .yella p{
+       color:#f2f2f2;
+       font-weight:bold;
+       font-size:small; 
+       position:relative;
+       padding-left:25%;
+       width:50%;
+       padding-bottom:5%;
+    }
+      .allen iframe{
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width:80%;
+       height:40%;
+       padding-top: 1%;
+       border-width: 0px;
+    }
+      .allen h2{
+        font-size: medium;
+        color:#f2f2f2;
+        font-weight:bold;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+      .allen p{
+       color:#f2f2f2;
+       font-weight:bold;
+       font-size:small; 
+       position:relative;
+       padding-left:25%;
+       width:50%;
+       padding-bottom:10%;  
+      }
+    /*made a flex container for Dante and Ryan about*/
+      .flex-container2{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height:auto;
+        width: auto;
+        justify-content: space-between;
+        padding: 5%;
+        color: white;
+     }
+      .dante-about{
+        flex:1;
+      }  
+      .dante-about h2{
+        font-size: medium;
+       position: relative;
+     }
+      .dante-about p{
+       width:60%;
+       height: auto;
+       font-weight:bold;
+       font-size: small;
+       position: relative; 
+     }
+      .dantepic img{
+       position: relative;
+       width:200px; 
+       height:300px;  
+     }
+     .ryan-about{
+       flex:1;
+     }
+     .ryan-about h2{
+       font-size: medium;
+       position:relative; 
+       font:bold;      
+     }
+     .ryan-about p{
+       width:60%;
+       height:auto;
+       font-weight:bold;
+       font-size: small;
+       position:relative;
+       
+     }
+     .ryanpic img{
+       width:200px;
+       height:300px;
+       position:relative;
+       padding-left: 5%;
+       padding-top:57%;
+     }
+    footer{
+       color:#f2f2f2;
+       text-align: center;
+       font-size: small;
+       
+    }
+    
+     /*++++++++++++episodes page style++++++++++++++++ */
+        
+    .iframes-container h2{
+      flex:10;
+      display: flex;
+      position:relative; 
+      font:bold;  
+      justify-content: center;
+      
+    }
+    .iframes-container{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      height:auto;
+      width: auto;
+      justify-content:space-around;
+      padding: 10%;
+      gap: 50px;
+      color: white;
+      }
+      .iframes-container p{
+        font-size:small;
+        width:70%;
+       
+      }
+
+     .shirt img{
+       
+       max-width:50%;
+       height: auto;
+       display: table;
+       margin: 0 auto;
+       padding-top: 5%;
+             
+     }
+     .shirt h2{
+       font-size:medium;
+       padding-top:5%;
+       color:white;
+       font-weight: bold;
+       max-width:100%;
+       height: auto;
+       display: table;
+       margin: 0 auto;
+     }
+
+     /*store form structure+++++++++++++++++++++*/
+     .store-form {
+      border: radius 5px;
+      background-color:whitesmoke;
+      padding: 3%;
+      max-width:50%;
+      margin: auto;
+      margin-top: 10%;
+    }
+    
+     /*CONTACTS PAGE CSS STARTS HERE*/
+     .contact h1{
+      color:white;
+      font-weight: bold;
+      font-size:x-large;
+      width:800px;
+      padding-left:800px;
+     }
+     .contact p{
+       color:white;
+       font-weight: bold;
+       font-size:x-large;
+       width:800px;
+       padding-left:550px;
+     }
+     .contact a{
+       color:#ff4500;
+       font-weight: bold;
+     }
+    }     
