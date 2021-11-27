@@ -1,14 +1,16 @@
-img{
-  max-width:100%;
-  height: auto;
-  display:flex;
-}
+  img{
+    max-width:100%;
+    height: auto;
+    display:flex;
+  }
+  .header img{
+    min-width: 100%;
+  }
 /*added max width to iframes for mobile response issues*/
-iframe{
-  max-width: 100%;
-  min-width: 30%;
-}
-
+  iframe{
+    max-width: 100%;
+    min-width: 30%;
+  }
  /*INDEX CSS*/
   body{
     margin: 0;
@@ -18,11 +20,9 @@ iframe{
   }
   .nav{
     overflow: hidden;
-    background:  #181612;
-    position:auto;
+    background:  #181612;    
     display: flex;
-    width: 100%;
-   
+    max-width: 100%;  
   }
   .nav a{
    color: #f2f2f2;
@@ -36,6 +36,8 @@ iframe{
   }
   .nav a:hover{
    background: #ff4500; 
+   cursor: pointer;
+   transition: all 1s ease-in-out;
   }
   .nav a.active{
     background: #e31c04;
@@ -47,11 +49,7 @@ iframe{
     display: flex;
     position: relative;
     display: table;
-    margin: 0 auto;
-    
-    
-      
-    
+    margin: 0 auto;   
   }
   .aboutpodcast p{
     color:#f2f2f2;
@@ -60,21 +58,9 @@ iframe{
    position:relative;
    padding-left:25%;
    width:50%;
-   padding-bottom:10%;  
-        
-  }
-  .flex-container11{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    height:auto;
-    width: auto;
-    justify-content: space-between;
-    padding: 100px;
-    color: rgb(29, 16, 219);
-  }
-  
-  .yella iframe{
+   padding-bottom:10%;          
+  } 
+   .yella iframe{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -91,7 +77,6 @@ iframe{
     padding-top:5%;
     padding-bottom:5%;
   }
-
   .yella h2{
     color:#f2f2f2;
     font-weight:bold;
@@ -99,7 +84,7 @@ iframe{
     position: relative;
     justify-content: center;
     align-items: center;
-}
+  }
   .yella p{
    color:#f2f2f2;
    font-weight:bold;
@@ -108,7 +93,7 @@ iframe{
    padding-left:25%;
    width:50%;
    padding-bottom:5%;
-}
+  }
   .allen iframe{
    display: block;
    margin-left: auto;
@@ -116,7 +101,7 @@ iframe{
    width:50%;
    padding-top: 1%;
    border-width: 0px;
-}
+  }
   .allen h2{
     color:#f2f2f2;
     font-weight:bold;
@@ -124,7 +109,7 @@ iframe{
     position: relative;
     justify-content: center;
     align-items: center;
-}
+  }
   .allen p{
    color:#f2f2f2;
    font-weight:bold;
@@ -176,18 +161,17 @@ iframe{
    font-weight:bold;
    font-size: x-large;
    position:relative;
-   
- }
+   }
  .ryanpic img{
    width:400px;
    height:600px;
    position:relative;
-   padding-top: 7%;
+   padding-top: 2%;
  }
-footer{
-   color:#f2f2f2;
-   
-}
+  footer{
+   color:#f2f2f2;  
+   text-align: center;
+  }
 
  /*episodes page style */
 
@@ -196,115 +180,42 @@ footer{
 
 
 /*created container in row to include all episodes and descriptions*/
-.iframes-container h2{
-  flex:10;
-  display: flex;
-  position:relative; 
-  font:bold;  
-  justify-content: center;
-  
+.iframes-container {
+    flex:10;
+    display: flex;
+    position:relative; 
+    font:bold;  
+    justify-content: center;  
 }
 .iframes-container{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  height:auto;
-  width: auto;
-  justify-content:space-around;
-  padding: 10%;
-  gap: 50px;
-  color: white;
-  }
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   height:auto;
+   width: auto;
+   justify-content:space-around;
+   padding: 10%;
+   gap: 50px;
+   color: white;
+   flex:10;
+   display: flex;
+   position:relative; 
+   font:bold;  
+   justify-content: center;  
+ }
   .iframes-container p{
     font-size:x-large;
-    width:40%;
-   
-  }
-  /*
-  .rainey iframe{
-   position:relative;
-   padding: 20px;
-   border-width: 0px;
-  }
-  /*each paragraph style
-  .iframes-container p{
-    font-weight: bold;
-    font-size:x-large;
-    height: 400px;
-    width:50%;
-    padding:10px;
-  }
-  .miletich iframe{   
-   position:relative;
-   padding: 20px;
-   border-width: 0px;
-  } 
-  .hughes iframe{    
-   position: relative;
-   padding: 20px;
-   border-width: 0px;
-  }
-  .fleury iframe{
-    position: relative;
-    padding: 20px;
-    border-width: 0px;
-  } 
-  .simon iframe{
-    border-width: 0px;
-  }
+    width:40%;  
+}
 
-  .glanton iframe{
-    border-width: 0px;
-  }
-   
-  .richards iframe{
-    border-width: 0px;
-  }
- 
-  .jjohnson iframe{
-    border-width: 0px;
-  }
-
-  .banks iframe{
-    border-width: 0px;
-  }
-
-  .printers iframe{
-    border-width: 0px;
-  }
-  
-  .kidd iframe{
-    border-width: 0px;
-  }
-
-  .manning iframe{
-    border-width: 0px;
-  }
-
-  .frazier iframe{
-    border-width: 0px;
-  }
-
-  .jimmerson iframe{
-    border-width: 0px;
-  }
-
-  .bruce iframe{
-    border-width: 0px;
-  }
-  */
- /*STORE CSS STARTS HERE*/
+ /*++++++++++++++STORE CSS STARTS HERE++++++++++++++++++*/
 
  .shirt img{
-   
    max-width:100%;
    height: auto;
    display: table;
    margin: 0 auto;
-   padding-top: 5%;
-   
-   
-   
+   padding-top: 5%;  
  }
  .shirt h2{
    padding-top:5%;
@@ -338,12 +249,12 @@ footer{
 
  /*CONTACTS PAGE CSS STARTS HERE*/
  .contact h1{
-  color:white;
-  font-weight: bold;
-  font-size:x-large;
-  width:800px;
-  padding-left:800px;
- }
+   color:white;
+   font-weight: bold;
+   font-size:x-large;
+   width:800px;
+   padding-left:800px;
+}
  .contact p{
    color:white;
    font-weight: bold;
@@ -362,23 +273,22 @@ footer{
   border: 1px solid #0e7a0d;
   border-radius: 4px;
   cursor: pointer;
+  transition:all 0.4s ease-in-out;
 }
-
 input[type="reset"]:hover {
-  background-color: #d1efe3;
+   background-color: #d1efe3;
 }
-
 input[type="submit"] {
-  background-color: #0e7a0d;
-  color: white;
-  padding: 12px 20px;
-  border: 1px solid #0e7a0d;
-  border-radius: 4px;
-  cursor: pointer;
+   background-color: #0e7a0d;
+   color: white;
+   padding: 12px 20px;
+   border: 1px solid #0e7a0d;
+   border-radius: 4px;
+   cursor: pointer;
+   transition:all 0.4s ease-in-out;
 }
-
 input[type="submit"]:hover {
-  background-color: #00ab66;
+   background-color: #00ab66;
 }
 /*form structure starts here=============================*/
 .contact-form {
@@ -389,68 +299,55 @@ input[type="submit"]:hover {
   margin: auto;
   margin-top: 10%;
 }
-
 .wrapper-button {
   display: flex;
   justify-content: space-between;
 }
 /*form controls start here=============================*/
 input, select, textarea{
-  font-size: 1em;
+   font-size: 1em;
 }
-
 input[type="text"],
-
 textarea {
-  width: 50%;
-  padding: 13px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical; 
+   width: 50%;
+   padding: 13px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   margin-top: 6px;
+   margin-bottom: 16px;
+   resize: vertical; 
 }
 input[type="email"] {
-  width: 50%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+   width: 50%;
+   padding: 12px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   margin-top: 6px;
+   margin-bottom: 16px;
+   resize: vertical;
 }
-
 select {
-  width: 20%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+   width: 20%;
+   padding: 12px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   margin-top: 6px;
+   margin-bottom: 16px;
+   resize: vertical;
 }
 textarea {
-  font-family: sans-serif;
+   font-family: sans-serif;
 }
-
 fieldset {
-  margin-bottom: 16px;
-  border: 1px solid #ccc;
+   margin-bottom: 16px;
+   border: 1px solid #ccc;
 }
-
 .label-required {
-  font-size: 0.8rem;
-  color: red;
+   font-size: 0.8rem;
+   color: red;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
-/*+++++ Medium devices (landscape tablets, 560px and up)+++++ 
-@media only screen and (min-width: 600px) {
-  .wrapper, .featured,.nav, .ryan-about p, .dante-about p,       .aboutpodcast h2 {
-    display: flex;*/
    
-  
+/*+++++++++responsive CSS starts here+++++++++++++++++++*/ 
   @media only screen and (max-width: 800px) {
     
     img{
@@ -459,7 +356,7 @@ fieldset {
       display:flex;
     }
     /*added max width to iframes for mobile response issues++ */
-   
+ 
     /*INDEX CSS*/
       body{
         margin: 0;
@@ -469,11 +366,9 @@ fieldset {
       }
       .nav{
         overflow: hidden;
-        background:  #181612;
-        position:auto;
+        background:  #181612; 
         display: flex;
-        width: 100%;
-       
+        width: 100%;       
       }
       .nav a{
        color: #f2f2f2;
@@ -482,15 +377,9 @@ fieldset {
        text-decoration: none;
        font-weight: bold;
        text-transform: uppercase;
-       padding: 10px 12px;
+       padding: 5px 5px;
        align-items: center;
       }
-      .nav a:hover{
-       background: #ff4500; 
-      }
-      .nav a.active{
-        background: #e31c04;
-      } 
       /*=====================================================*/
       .aboutpodcast h2{
         color:#f2f2f2;
@@ -499,12 +388,10 @@ fieldset {
         display: flex;
         position: relative;
         justify-content: center;
-        align-items: center;
-          
-        
+        align-items: center;       
       }
       .aboutpodcast p{
-        color:#f2f2f2;
+       color:#f2f2f2;
        font-weight:bold;
        font-size:small; 
        position:relative;
@@ -513,9 +400,7 @@ fieldset {
        padding-bottom:10%;  
             
       }
-
-      
-      .yella iframe{
+        .yella iframe{
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -530,13 +415,11 @@ fieldset {
         font-weight:bold;
         display: flex;
         display: table;
-        margin: 0 auto;
-        
+        margin: 0 auto;        
         padding-top:5%;
         padding-bottom:5%;
       }
-    
-      .yella h2{
+       .yella h2{
         font-size: medium;
         color:#f2f2f2;
         font-weight:bold;
@@ -625,7 +508,6 @@ fieldset {
        font-weight:bold;
        font-size: small;
        position:relative;
-       
      }
      .ryanpic img{
        width:200px;
@@ -693,7 +575,7 @@ fieldset {
       border-radius: 5px;
       background-color:whitesmoke;
       padding: 3%;
-      max-width:50%;
+      max-width:80%;
       margin: auto;
       margin-top: 10%;
     }
@@ -717,4 +599,53 @@ fieldset {
        color:#ff4500;
        font-weight: bold;
      }
-    }     
+    }  
+    /*screens below 300px were not responding well so I added this*/
+    @media only screen and (max-width: 300px) {   
+      .nav a{
+        color: #f2f2f2;
+        text-align: center;
+        width: 45%;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 1px 1px;
+        align-items: center; 
+      }
+      .featured h2{
+        font-size:medium;
+        color:#f2f2f2;
+        font-weight:bold;
+        display: flex;
+        display: table;
+        margin: 0 auto;        
+        padding-top:5%;
+        padding-bottom:5%; 
+      }  
+      .yella h2{
+        font-size: small;
+      }
+      .allen h2{
+        font-size: small;
+      }
+      .shirt h2{
+        padding-top:5%;
+        font-size: small;
+        color:white;
+        font-weight: bold;
+        max-width:100%;
+        height: auto;
+        display: table;
+        margin: 0 auto;
+      }
+      .store-form {
+        border-radius:  5px;
+        background-color:whitesmoke;
+        padding: 3%;
+        max-width:80%;
+        margin: auto;
+        margin-top: 10%;
+      }
+     
+  
+}
