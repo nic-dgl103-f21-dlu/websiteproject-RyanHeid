@@ -448,7 +448,6 @@ fieldset {
     }
       .allen h2{
         font-size: medium;
-        color:#f2f2f2;
         font-weight:bold;
         display: flex;
         position: relative;
@@ -456,7 +455,6 @@ fieldset {
         align-items: center;
     }
       .allen p{
-       color:#f2f2f2;
        font-weight:bold;
        font-size:small; 
        position:relative;
@@ -554,7 +552,6 @@ fieldset {
      .shirt h2{
        font-size:medium;
        padding-top:5%;
-       color:white;
        font-weight: bold;
        max-width:100%;
        height: auto;
@@ -565,7 +562,6 @@ fieldset {
      /*store form structure+++++++++++++++++++++*/
      .store-form {
       border-radius: 5px;
-      background-color:whitesmoke;
       padding: 3%;
       max-width:80%;
       margin: auto;
